@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+ <meta charset="utf-8" />
+ <title>Draw a point (1)</title>
+ </head>
+
+ <body onload="main()">
+   <p><a href="Drawing.html">Drawing</a></p>
+   <canvas id="webgl" width="400" height="400">
+     Please use the browser supporting "canvas".
+   </canvas>
+
+   <p id="numdot">XXX</p>
+
+   <br><br>
+   <input type="button" id="green">Green</input>
+   <input type="button" id="red">Red</input>
+   <input type="button" id="clearButton">Clear</input>
+
+   <br><br>
+   <input type="button" id="point">Point</input>
+   <input type="button" id="triangle">Triangle</input>
+   <input type="button" id="circle">Circle</input>
+   <input type="button" id="drawing">Custom Drawing</input>
+
+   <br><br>
+   <input type="range" min="0" max="100" value="100" id="redSlider">Red</input><br>
+   <input type="range" min="0" max="100" value="0" id="greenSlider">Green</input><br>
+   <input type="range" min="0" max="100" value="0" id="blueSlider">Blue</input><br>
+
+   <input type="range" min="0" max="100" value="0" id="sizeSlider">Size</input>
+
+   <script src="libs/webgl-utils.js"></script>
+   <script src="libs/webgl-debug.js"></script>
+   <script src="libs/cuon-utils.js"></script>
+   <script src="Point.js"></script>
+   <script src="Triangles.js"></script>
+   <script src="Circles.js"></script>
+   <script src="Draw.js"></script>
+   <script src="ColoredPoints.js"></script>
+ </body>
+</html>
